@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f5f5">
+
+    <TextView
+        android:id="@+id/notif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f5f5"
+        android:padding="10dp"
+        android:text="Notifications"
+        android:textAlignment="center"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#918696"
+        />
+
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/notif"
+        android:layout_alignTop="@+id/notif"
+        android:scaleType="centerInside"
+        android:background="@drawable/backbutton"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="No notifications available."
+        android:textSize="12dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/notif"
+        android:textAlignment="center"
+        android:fontFamily="o"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/small_line"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/line"/>
+
+
+</RelativeLayout>

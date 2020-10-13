@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f5f5">
+
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f5f5"
+        android:padding="10dp"
+        android:text="Settings"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#918696"
+        android:fontFamily="@font/open_sans_extrabold"
+
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/line"/>
+
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/settings"
+        android:layout_alignTop="@+id/settings"
+        android:scaleType="centerInside"
+        android:background="#f5f6f6"
+        android:src="@drawable/backbutton"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:background="#d7d0d8"
+        android:padding="8dp"
+        android:text="Name"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#a6a6a6"/>
+
+    <TextView
+        android:id="@+id/go_name"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_toRightOf="@id/userName"
+        android:background="#d7d0d8"
+        android:scaleType="centerInside"
+        android:contextClickable="true"
+        android:text=">"
+        android:textAlignment="center"
+        android:fontFamily="@font/amaranth_bold"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/theme"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:background="#d3d3d3"
+        android:padding="8dp"
+        android:text="Theme"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="75dp"
+        android:textColor="#a6a6a6"/>
+
+    <TextView
+        android:id="@+id/go_theme"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/theme"
+        android:layout_alignBottom="@+id/theme"
+        android:layout_toRightOf="@id/theme_name"
+        android:scaleType="centerInside"
+        android:contextClickable="true"
+        android:background="#d7d0d8"
+        android:text=">"
+        android:textAlignment="center"
+        android:fontFamily="@font/amaranth_bold"
+        android:textSize="20sp"/>
+
+    <TextView
+            android:id="@+id/version"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="#d3d3d3"
+            android:padding="8dp"
+            android:text="Version"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="150dp"
+        android:textColor="#a6a6a6"/>
+
+    <TextView
+                android:id="@+id/userName"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:padding="8dp"
+                android:text="@string/user_name"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/name"
+                android:background="#d7d0d8"
+                android:fontFamily="@font/open_sans_extrabold"
+
+
+        />
+
+            <TextView
+                android:id="@+id/theme_name"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="76dp"
+                android:padding="8dp"
+                android:text="@string/theme_name"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/theme"
+                android:background="#d7d0d8"
+                android:fontFamily="@font/open_sans_extrabold"
+
+                />
+
+            <TextView
+                android:id="@+id/version_name"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:padding="8dp"
+                android:text="@string/version_name"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/version"
+                android:background="#d7d0d8"/>
+
+
+</RelativeLayout>

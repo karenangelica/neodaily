@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f5f5">
+
+
+
+    <TextView
+        android:id="@+id/notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f5f5"
+        android:padding="10dp"
+        android:text="NOTES"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#918696"
+        />
+
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/notes"
+        android:layout_alignTop="@+id/notes"
+        android:scaleType="centerInside"
+        android:background="@drawable/backbutton"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/line" />
+
+    <ImageButton
+        android:id="@+id/addnote"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/notes"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:background="@drawable/add_note_button"
+        />
+
+
+</RelativeLayout>

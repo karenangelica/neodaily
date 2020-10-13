@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/labels"
+       />
+
+    <RelativeLayout
+        android:id="@+id/labels"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#ffcccc"
+        android:layout_alignParentRight="true"
+        android:elevation="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/profile_button"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:background="@drawable/unclicked_profile_button"
+            />
+
+        <ImageButton
+            android:id="@+id/weekly_button"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_below="@id/profile_button"
+            android:background="@drawable/unclicked_week_button"
+            />
+
+        <ImageButton
+            android:id="@+id/monthly_button"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_below="@id/weekly_button"
+            android:background="@drawable/unclicked_month_button"
+            />
+        <ImageButton
+            android:id="@+id/notes_button"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:layout_below="@id/monthly_button"
+            android:background="@drawable/unclicked_notes_button"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
